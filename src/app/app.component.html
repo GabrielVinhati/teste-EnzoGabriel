@@ -1,0 +1,25 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>Inbox</ion-list-header>
+          <ion-note>hi&#64;ionicframework.com</ion-note>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerDirection="root"  lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon name="bus-outline" (click)="home()"></ion-icon>
+              mapbus
+            </ion-item>
+            <ion-item routerDirection="root" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon name="document-attach-outline" (click)="documentacao()"></ion-icon>
+              documentacao
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

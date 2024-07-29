@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>mapbus</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">mapbus</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<div>
+  <button>
+    <ion-button (click)="request()">
+      <ion-icon name="airplane-outline"></ion-icon>
+    </ion-button>
+  </button>
+</div>
+
+<div>
+
+  <ion-item>
+    <ion-input [(ngModel)]="linha" label="Linha" placeholder="Entre com o nome da linha"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="sentido" label="Sentido" placeholder="Entre com o sentido"></ion-input>
+  </ion-item>
+  <button>
+    <ion-button (click)="pesquisaParametro()">
+      <ion-icon name="american-football-outline"></ion-icon>
+    </ion-button>
+  </button>
+</div>
